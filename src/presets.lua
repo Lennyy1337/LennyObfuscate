@@ -11,7 +11,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "";
         -- Name Generator for Variables
-        NameGenerator = "Confuse";
+        NameGenerator = "UwU";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -32,7 +32,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "LENNY_";
         -- Name Generator for Variables that look like this: IlI1lI1l
-        NameGenerator = "Confuse";
+        NameGenerator = "UwU";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -72,7 +72,7 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "LENNY_";
         -- Name Generator for Variables
-        NameGenerator = "Confuse";
+        NameGenerator = "UwU";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -81,8 +81,8 @@ return {
         Steps = {
             {
                 Name = "EncryptStrings";
-                Settings = {
-
+               Settings = {
+		   
                 };
             },
             {
@@ -90,7 +90,7 @@ return {
                 Settings = {
                     UseDebug = false;
                 };
-            },
+           },
             {
                 Name = "Vmify";
                 Settings = {
@@ -133,19 +133,13 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "LENNY_";
         -- Name Generator for Variables that look like this: IlI1lI1l
-        NameGenerator = "Confuse";
+        NameGenerator = "UwU";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
         Seed = 0;
         -- Obfuscation steps
         Steps = {
-            {
-                Name = "Vmify";
-                Settings = {
-                    
-                };
-            },
             {
                 Name = "EncryptStrings";
                 Settings = {
@@ -155,7 +149,7 @@ return {
             {
                 Name = "AntiTamper";
                 Settings = {
-
+                    UseDebug = false;
                 };
             },
             {
