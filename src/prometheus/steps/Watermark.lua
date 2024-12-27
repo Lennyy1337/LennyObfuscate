@@ -14,16 +14,16 @@ Watermark.Name = "Watermark";
 
 Watermark.SettingsDescriptor = {
   Content = {
-    name = "Content",
-    description = "The Content of the Watermark",
+    name = "LENNYFIED",
+    description = "This file has been obfuscated with Lenny Obfuscator.",
     type = "string",
-    default = "This Script is Part of the Prometheus Obfuscator by Levno_710",
+    default = "This file has been obfuscated with Lenny Obfuscator.",
   },
   CustomVariable = {
-    name = "Custom Variable",
-    description = "The Variable that will be used for the Watermark",
+    name = "LENNYOBFUSCATOR",
+    description = "This file has been obfuscated with Lenny Obfuscator.",
     type = "string",
-    default = "_WATERMARK",
+    default = "_LENNYFIED",
   }
 }
 

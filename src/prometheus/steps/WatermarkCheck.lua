@@ -14,12 +14,12 @@ WatermarkCheck.Description = "This Step will add a watermark to the script";
 WatermarkCheck.Name = "WatermarkCheck";
 
 WatermarkCheck.SettingsDescriptor = {
-  Content = {
-    name = "Content",
-    description = "The Content of the WatermarkCheck",
-    type = "string",
-    default = "This Script is Part of the Prometheus Obfuscator by Levno_710",
-  },
+	Content = {
+		name = "LENNYFIED",
+		description = "This file has been obfuscated with Lenny Obfuscator.",
+		type = "string",
+		default = "This file has been obfuscated with Lenny Obfuscator.",
+	},
 }
 
 local function callNameGenerator(generatorFunction, ...)

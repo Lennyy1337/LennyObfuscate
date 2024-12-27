@@ -11,33 +11,43 @@ return {
         -- For minifying no VarNamePrefix is applied
         VarNamePrefix = "";
         -- Name Generator for Variables
-        NameGenerator = "MangledShuffled";
+        NameGenerator = "Confuse";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
         Seed = 0;
         -- No obfuscation steps
         Steps = {
-
+            {
+                Name = "WatermarkCheck";
+                Settings = {
+                    Content = "This file has been obfuscated with Lenny Obfuscator.";
+                }
+            },
         }
     };
     ["Weak"] = {
         -- The default LuaVersion is Lua51
         LuaVersion = "Lua51";
         -- For minifying no VarNamePrefix is applied
-        VarNamePrefix = "";
+        VarNamePrefix = "LENNY_";
         -- Name Generator for Variables that look like this: IlI1lI1l
-        NameGenerator = "MangledShuffled";
+        NameGenerator = "Confuse";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
         Seed = 0;
         -- Obfuscation steps
         Steps = {
+			{
+                Name = "WatermarkCheck";
+                Settings = {
+                    Content = "This file has been obfuscated with Lenny Obfuscator.";
+                }
+            },
             {
                 Name = "Vmify";
                 Settings = {
-                    
                 };
             },
             {
@@ -53,15 +63,16 @@ return {
 
                 }
             },
+
         }
     };
     ["Medium"] = {
         -- The default LuaVersion is Lua51
         LuaVersion = "Lua51";
         -- For minifying no VarNamePrefix is applied
-        VarNamePrefix = "";
+        VarNamePrefix = "LENNY_";
         -- Name Generator for Variables
-        NameGenerator = "MangledShuffled";
+        NameGenerator = "Confuse";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -108,15 +119,21 @@ return {
 
                 }
             },
+			{
+                Name = "WatermarkCheck";
+                Settings = {
+                    Content = "This file has been obfuscated with Lenny Obfuscator.";
+                }
+            },
         }
     };
     ["Strong"] = {
         -- The default LuaVersion is Lua51
         LuaVersion = "Lua51";
         -- For minifying no VarNamePrefix is applied
-        VarNamePrefix = "";
+        VarNamePrefix = "LENNY_";
         -- Name Generator for Variables that look like this: IlI1lI1l
-        NameGenerator = "MangledShuffled";
+        NameGenerator = "Confuse";
         -- No pretty printing
         PrettyPrint = false;
         -- Seed is generated based on current time
@@ -167,6 +184,13 @@ return {
                 Name = "WrapInFunction";
                 Settings = {
 
+                }
+            },
+			{
+                Name = "WatermarkCheck";
+                Settings = {
+                    description = "This file has been obfuscated with Lenny Obfuscator.";
+					name = "LENNYFIED";
                 }
             },
         }
