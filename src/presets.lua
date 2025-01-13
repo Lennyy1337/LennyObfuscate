@@ -18,12 +18,6 @@ return {
         Seed = 0;
         -- No obfuscation steps
         Steps = {
-            {
-                Name = "WatermarkCheck";
-                Settings = {
-                    Content = "This file has been obfuscated with Lenny Obfuscator.";
-                }
-            },
         }
     };
     ["Weak"] = {
@@ -39,6 +33,12 @@ return {
         Seed = 0;
         -- Obfuscation steps
         Steps = {
+			{
+				Name = "ProxifyLocals",
+				Settings = {
+
+				};
+			},
 			{
                 Name = "WatermarkCheck";
                 Settings = {
@@ -79,6 +79,12 @@ return {
         Seed = 0;
         -- Obfuscation steps
         Steps = {
+			{
+				Name = "ProxifyLocals",
+				Settings = {
+
+				};
+			},
             {
                 Name = "EncryptStrings";
                Settings = {
@@ -140,6 +146,12 @@ return {
         Seed = 0;
         -- Obfuscation steps
         Steps = {
+			{
+				Name = "ProxifyLocals",
+				Settings = {
+
+				};
+			},
             {
                 Name = "EncryptStrings";
                 Settings = {
@@ -155,7 +167,7 @@ return {
             {
                 Name = "Vmify";
                 Settings = {
-                    
+
                 };
             },
             {
